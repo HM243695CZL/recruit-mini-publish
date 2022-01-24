@@ -1,13 +1,7 @@
 export default {
   pages: [
     'pages/index/index',
-    'pages/category/index',
-    'pages/shop/index',
     'pages/user/index',
-    'pages/search/index',
-    'pages/goodsInfo/index',
-    'pages/fillOrder/index',
-    'pages/productList/index',
   ],
   tabBar: {
     color: '#000',
@@ -20,18 +14,6 @@ export default {
         text: '首页'
       },
       {
-        iconPath: 'static/img/category.png',
-        selectedIconPath: 'static/img/category-select.png',
-        pagePath: 'pages/category/index',
-        text: '分类'
-      },
-      {
-        iconPath: 'static/img/shop.png',
-        selectedIconPath: 'static/img/shop-select.png',
-        pagePath: 'pages/shop/index',
-        text: '购物车'
-      },
-      {
         iconPath: 'static/img/user.png',
         selectedIconPath: 'static/img/user-select.png',
         pagePath: 'pages/user/index',
@@ -41,8 +23,8 @@ export default {
   },
   window: {
     backgroundTextStyle: 'light',
-    navigationBarBackgroundColor: '#fff',
+    navigationBarBackgroundColor: '#36c1ba',
     navigationBarTitleText: 'WeChat',
-    navigationBarTextStyle: 'black'
+    navigationBarTextStyle: 'white'
   }
 }

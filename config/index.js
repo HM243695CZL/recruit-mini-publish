@@ -1,5 +1,5 @@
 const config = {
-  projectName: 'yyx',
+  projectName: 'recruit-mini-publish',
   date: '2021-10-17',
   designWidth: 750,
   deviceRatio: {
