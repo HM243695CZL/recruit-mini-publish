@@ -7,7 +7,10 @@ export default {
     {
       'root': 'pages/person',
       'pages': [
-        'pages/personInfo/index'
+        'pages/personInfo/index',
+        'pages/publishStation/index',
+        'pages/stationType/index',
+        'pages/skillList/index',
       ]
     }
   ],

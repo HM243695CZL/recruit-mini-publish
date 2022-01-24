@@ -22,7 +22,9 @@ export default function User() {
     if (data.value === '') {
       setIsOpened(true);
     } else {
-
+      Taro.navigateTo({
+        url: `/pages/person/pages/${data.value}/index`
+      })
     }
   };
   const closeModal = () => {

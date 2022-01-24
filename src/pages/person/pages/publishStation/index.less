@@ -1,0 +1,55 @@
+@import "../../../../base.less";
+@saveBtnHeight: 100px;
+.publish-station-container{
+  background: @white;
+  height: 100%;
+  .publish-box{
+    height: calc(100% - @saveBtnHeight - @basePadding);
+    overflow: auto;
+    padding: @basePadding;
+    box-sizing: border-box;
+    .property{
+      padding: @basePadding 0;
+      border-bottom: 1PX solid @baseBorderColor;
+      .txt{
+        width: 160px;
+      }
+      .at-input{
+        flex: 1;
+        margin-left: 0;
+        text-align: right;
+        &::after{
+          border: none;
+        }
+      }
+      .right{
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        .null-tip{
+          color: @baseColor;
+        }
+        .right-icon{
+          margin-left: @halfBasePadding;
+        }
+      }
+    }
+  }
+  .btn-box{
+    background: @white;
+    box-sizing: border-box;
+    padding: @halfBasePadding @basePadding;
+    .save-btn{
+      box-sizing: border-box;
+      height: @saveBtnHeight;
+      border-radius: 10px;
+      background: @baseColor;
+      padding: @halfBasePadding 0;
+      color: @white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
