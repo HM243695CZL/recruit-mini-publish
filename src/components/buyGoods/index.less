@@ -1,0 +1,102 @@
+.buy-goods-container{
+  .bottom-box{
+    border-radius: 20px 20px 0 0;
+    background: #fff;
+    padding: 50px 20px 20px;
+    .goods-info{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 50px;
+      image{
+        width: 180px;
+        height: 180px;
+      }
+      .info{
+        flex: 1;
+        padding-left: 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-start;
+        .price{
+          color: #ff6146;
+          font-size: 32px;
+          font-weight: 700;
+          margin-bottom: 10px;
+        }
+        .stock{
+          font-size: 28px;
+          padding: 5px;
+          color: #b2b2b2;
+          .detail{
+            color: #000;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+    .flavor{
+      border-bottom: 1px solid #f9f9f9;
+      &:after{
+        content: '';
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+      }
+      .title{
+        color: #7f7f7f;
+      }
+      .flavor-list{
+        float: left;
+        width: 100%;
+        padding: 30px 0;
+        font-size: 28px;
+        .flavor-item{
+          display: inline-block;
+          padding: 10px;
+          background: #f7f7f7;
+          color: #000;
+          margin-right: 20px;
+          margin-bottom: 20px;
+          border-radius: 10px;
+          &.active{
+            color: #ff6146;
+            background: #ffefec;
+          }
+        }
+      }
+    }
+    .count-box{
+      padding-top: 30px;
+      .title{
+        color: #7f7f7f;
+      }
+    }
+    .shopping-box{
+      margin-top: 40px;
+      color: #fff;
+      .add-car{
+        flex: 1;
+        text-align: center;
+        border-radius: 20px 0 0 20px;
+        padding: 20px;
+        background: #fdbc01;
+      }
+      .now-buy{
+        flex: 1;
+        text-align: center;
+        border-radius: 0 20px 20px 0;
+        padding: 20px;
+        background: #fd7100;
+      }
+    }
+    .at-button{
+      margin-top: 20px;
+      background: #ff6848;
+      color: #fff;
+      border-color: #ff6848;
+    }
+  }
+}
