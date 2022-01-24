@@ -4,4 +4,66 @@
   height: 100%;
   box-sizing: border-box;
   background: @white;
+  .head-card{
+    height: 160px;
+    background: @baseColor;
+    padding: @basePadding;
+    .left{
+      color: @white;
+      .name{
+        font-size: 50px;
+        margin-bottom: @halfBasePadding;
+      }
+      .online-resume{
+        .edit-icon{
+          margin-right: @halfBasePadding;
+        }
+      }
+    }
+    .img-avatar{
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+    }
+  }
+  .icon-list{
+    margin-top: @basePadding;
+    padding: 0 @basePadding;
+    background: @white;
+    .item-box{
+      padding: @basePadding 0;
+      border-bottom: 1PX solid @baseBorderColor;
+      &:last-child{
+        border-bottom: none;
+      }
+      .left{
+        flex: 2;
+        .txt{
+          margin-left: @basePadding;
+        }
+      }
+    }
+  }
+  .logout-btn{
+    margin-top: @basePadding;
+    padding: @basePadding;
+    .logout{
+      border-radius: 10px;
+      padding: @basePadding 0;
+      text-align: center;
+      background: @baseBtnBgColor;
+      color: @baseTextColor;
+    }
+  }
+  .technical-support{
+    color: @baseTextColor;
+    text-align: center;
+    height: 200px;
+    line-height: 200px;
+    font-size: 24px;
+  }
+}
+.modal-box{
+  text-align: center;
+  line-height: 180px;
 }

@@ -3,6 +3,14 @@ export default {
     'pages/index/index',
     'pages/user/index',
   ],
+  subpackages: [
+    {
+      'root': 'pages/person',
+      'pages': [
+        'pages/personInfo/index'
+      ]
+    }
+  ],
   tabBar: {
     color: '#000',
     selectedColor: '#ff6146',
