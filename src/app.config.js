@@ -15,6 +15,7 @@ export default {
         'pages/chooseMap/index',
         'pages/stationDesc/index',
         'pages/stationManage/index',
+        'pages/interviewSchedule/index',
       ]
     }
   ],
@@ -26,7 +27,7 @@ export default {
         iconPath: 'static/img/home.png',
         selectedIconPath: 'static/img/home-select.png',
         pagePath: 'pages/index/index',
-        text: '首页'
+        text: '消息'
       },
       {
         iconPath: 'static/img/user.png',
