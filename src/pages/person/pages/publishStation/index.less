@@ -37,10 +37,24 @@
     }
   }
   .btn-box{
+    border-top: 1PX solid @baseBorderColor;
     background: @white;
     box-sizing: border-box;
     padding: @halfBasePadding @basePadding;
+    .delete-btn{
+      flex: 1;
+      box-sizing: border-box;
+      height: @saveBtnHeight;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: @baseBtnBgColor;
+      color: @black;
+      border-radius: 10px;
+      margin-right: @basePadding;
+    }
     .save-btn{
+      flex: 3;
       box-sizing: border-box;
       height: @saveBtnHeight;
       border-radius: 10px;

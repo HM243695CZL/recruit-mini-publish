@@ -14,6 +14,7 @@ export default {
         'pages/chooseCity/index',
         'pages/chooseMap/index',
         'pages/stationDesc/index',
+        'pages/stationManage/index',
       ]
     }
   ],

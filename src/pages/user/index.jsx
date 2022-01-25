@@ -7,7 +7,7 @@ import './index.less'
 export default function User() {
   const [isOpened, setIsOpened] = useState(false);
   const [iconList] = useState([
-    { icon: 'star', text: '职位管理', value: 'collection' },
+    { icon: 'star', text: '职位管理', value: 'stationManage' },
     { icon: 'alert-circle', text: '面试日程', value: 'advise' },
     { icon: 'stop', text: '发布职位', value: 'publishStation'},
     { icon: 'user', text: '切换为求职者', value: ''},

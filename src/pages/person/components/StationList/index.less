@@ -1,0 +1,39 @@
+@import "../../../../base.less";
+.list-item{
+  border-bottom: 1PX solid @baseBorderColor;
+  &:last-child{
+    border: none;
+  }
+  .title{
+    padding-top: @basePadding;
+    .name{
+      font-weight: 700;
+    }
+    .salary{
+      color: @baseColor;
+    }
+  }
+  .require{
+    padding: @halfBasePadding 0;
+    .edu{
+      padding-left: @basePadding;
+    }
+  }
+  .publish-info{
+    padding: @halfBasePadding 0;
+    .place{
+      flex: 1;
+      .publish-city{
+        font-size: @smallSize;
+        padding-left: @halfBasePadding;
+        .place-area{
+          padding-left: @halfBasePadding;
+        }
+      }
+    }
+    .time{
+      color: @grayColor;
+      font-size: @smallSize;
+    }
+  }
+}

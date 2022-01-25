@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { View, Text, Picker } from '@tarojs/components'
 import { AtIcon } from 'taro-ui';
-import Taro, { useDidShow } from '@tarojs/taro';
+import Taro, { useRouter, useDidShow } from '@tarojs/taro';
 import { AtInput } from 'taro-ui';
 import './index.less'
 export default function PublishStation() {
+  const router = useRouter();
   const [companyInfo] = useState('某某某科技有限公司');
   const [stationType, setStationType] = useState('web前端');
   const [stationName, setStationName] = useState('');
@@ -89,6 +90,9 @@ export default function PublishStation() {
     })
   };
   useDidShow(() => {
+    Taro.setNavigationBarTitle({
+      title: (router.params.type === 'edit' ? '编辑' : '发布') + '职位'
+    });
     let startSalaryArr = [];
     let endSalaryArr = [];
     for (let i = 1; i < 30; i ++) {
@@ -215,8 +219,9 @@ export default function PublishStation() {
           </View>
         </View>
       </View>
-      <View className='btn-box'>
-        <View className='save-btn'>发布</View>
+      <View className='btn-box flex-between'>
+        {router.params.type === 'edit' && <View className='delete-btn'>删除</View>}
+        <View className='save-btn'>{router.params.type === 'edit' ? '确定' : '发布'}</View>
       </View>
     </View>
   )
