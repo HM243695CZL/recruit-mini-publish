@@ -1,0 +1,37 @@
+@import "../../../../base.less";
+.news-list{
+  padding: @basePadding 0;
+  border-bottom: 1PX solid @baseBorderColor;
+  .img-avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: @basePadding;
+  }
+  .info{
+    flex: 1;
+    padding-left: @halfBasePadding;
+    .name{
+      font-weight: 700;
+      color: @black;
+      margin-bottom: @halfBasePadding;
+      .status{
+        font-weight: 400;
+        color: @baseColor;
+      }
+      .already{
+        color: #fc703e;
+      }
+    }
+    .detail{
+      color: @baseTextColor;
+      font-size: @smallSize;
+      .station-txt{
+        flex: 1;
+      }
+      .time{
+        width: 250px;
+        text-align: right;
+      }
+    }
+  }
+}

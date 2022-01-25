@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { View, Text } from '@tarojs/components'
-import InterviewList from '../../components/interviewList'
+import InterviewList from '../../components/InterviewList'
 import './index.less'
 export default function InterviewSchedule() {
   const [list] = useState([
