@@ -15,6 +15,9 @@ export default function PublishStation() {
   const [experienceVal, setExperienceVal] = useState([0]);
   const [edu, setEdu] = useState('本科');
   const [eduVal, setEduVal] = useState([4]);
+  const [workCity, setWorkCity] = useState('贵阳');
+  const [workPlace] = useState('贵阳市观山湖区某某大厦');
+  const [stationDesc] = useState('主要包括工作名称，工作职责，任职条件，工作所要求的技能');
   const [salaryList, setSalaryList] = useState([
     [], []
   ]);
@@ -70,6 +73,21 @@ export default function PublishStation() {
     setEduVal([eduValue.detail.value]);
     setEdu(eduList[eduValue.detail.value]);
   };
+  const changeWorkCity = () => {
+    Taro.navigateTo({
+      url: '/pages/person/pages/chooseCity/index'
+    })
+  };
+  const changeWorkPlace = () => {
+    Taro.navigateTo({
+      url: '/pages/person/pages/chooseMap/index'
+    })
+  };
+  const changeStationDesc = () => {
+    Taro.navigateTo({
+      url: '/pages/person/pages/stationDesc/index'
+    })
+  };
   useDidShow(() => {
     let startSalaryArr = [];
     let endSalaryArr = [];
@@ -90,6 +108,9 @@ export default function PublishStation() {
     const currPage = pages[pages.length - 1]; // 获取当前页面
     if (currPage.data.selectedStation) {
       setStationType(currPage.data.selectedStation);
+    }
+    if (currPage.data.selectedCity) {
+      setWorkCity(currPage.data.selectedCity);
     }
   });
   return (
@@ -172,8 +193,26 @@ export default function PublishStation() {
             </View>
           </View>
         </Picker>
-        <View className='property flex-between'>
+        <View className='property flex-between' onClick={e => changeWorkCity()}>
           <Text className='txt'>工作城市</Text>
+          <View className='right'>
+            {workCity}
+            <AtIcon className='right-icon' value='chevron-right' size='20' color='#787878'/>
+          </View>
+        </View>
+        <View className='property flex-between' onClick={e => changeWorkPlace()}>
+          <Text className='txt'>工作地点</Text>
+          <View className='right'>
+            {workPlace}
+            <AtIcon className='right-icon' value='chevron-right' size='20' color='#787878'/>
+          </View>
+        </View>
+        <View className='property flex-between' onClick={e => changeStationDesc()}>
+          <Text className='txt'>职位描述</Text>
+          <View className='right text-over'>
+            <View className='text-over'>{stationDesc}</View>
+            <AtIcon className='right-icon' value='chevron-right' size='20' color='#787878'/>
+          </View>
         </View>
       </View>
       <View className='btn-box'>

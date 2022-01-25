@@ -11,6 +11,9 @@ export default {
         'pages/publishStation/index',
         'pages/stationType/index',
         'pages/skillList/index',
+        'pages/chooseCity/index',
+        'pages/chooseMap/index',
+        'pages/stationDesc/index',
       ]
     }
   ],
