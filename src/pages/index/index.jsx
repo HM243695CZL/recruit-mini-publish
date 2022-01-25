@@ -8,21 +8,21 @@ export default function Index() {
       avatar: 'https://img1.baidu.com/it/u=1461158162,3281682659&fm=253&fmt=auto&app=138&f=JPEG?w=400&h=400',
       name: '张三',
       lastMessage: '好的，明天见!',
-      sendUser: '孔女士',
+      sendUser: '张三',
       time: '10:25'
     },
     {
       avatar: 'https://img0.baidu.com/it/u=1791194990,4113139263&fm=253&fmt=auto&app=138&f=JPEG?w=400&h=400',
       name: '法外狂徒',
       lastMessage: '请自行准备简历',
-      sendUser: '李先生',
+      sendUser: '我',
       time: '01-25'
     },
     {
       avatar: 'https://img0.baidu.com/it/u=2359361020,2055583759&fm=253&fmt=auto&app=138&f=JPEG?w=400&h=400',
       name: '李逍遥',
       lastMessage: '可以',
-      sendUser: '黄经理',
+      sendUser: '李逍遥',
       time: '17:45'
     },
     {

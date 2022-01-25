@@ -16,6 +16,7 @@ export default {
         'pages/stationDesc/index',
         'pages/stationManage/index',
         'pages/interviewSchedule/index',
+        'pages/communicateRecord/index',
       ]
     }
   ],
