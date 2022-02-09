@@ -2,7 +2,7 @@
   "miniprogramRoot": "./dist",
   "projectname": "recruit-mini-publish",
   "description": "发布招聘小程序",
-  "appid": "wx209498bf307d2abb",
+  "appid": "wx98090fb05e5a80b0",
   "setting": {
     "urlCheck": true,
     "es6": false,
